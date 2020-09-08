@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+  <title>Will's Wild Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="mystyles.css">
+  <style>
+	a {
+		color: inherit;
+	}
+  </style>
+</head>
+<body style="background-color:coral;">
+	<div id="image" style="float:left;">
+		<img src="me.jpg" alt="Picture of me" style = "max-width:160px;">
+	</div>
+  
+	<div id="Text"  style = "float:left;text-align:left;margin-left:15px;font-family: Arial;">
+		<h2><a href = "index.html" style = "text-decoration: none;">William Dorrell</a></h2>
+	    <h4 style = "margin-top: 1.em;margin-bottom:0em"> <a href = "index.html" style = "text-decoration: none;">Serious Things</a> </h4>
+	    <h4 style = "margin-top: 1.em;margin-bottom:0em"> <a href = "index2.html" style = "text-decoration: none;">Not-so-serious Things </a></h4>
+	    <p style = "margin-top: 0.25em;margin-bottom:0em;"> <a href="project.html">Projects/Thinkings</a> | <a href = "articles.html">Articles</a> | <a href="observations.html">Observations</a> | <a href="conjectures.html">Conjectures</a> | <a href="app.html">App</a> | <a href = "reading.html">Commonplace Book</a></p> 
+	</div>
+	<hr style = "clear:both;border-top: 2px solid;">
+	<div id = "Text" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
+		<h3 style = "font-weight:bold;text-align:center;">Who's afraid of Thomas Bayes?</h3>
+		<img src="bayes.JPG" alt="Picture of Bayes" class = "center" style = "width:100%;max-width:250px;align:center;">						
+		<p>Ah, the Revd Thomas Bayes. By all accounts, a nice man. And there’s no denying he had a knack with conditional probabilities. But whenever I hear about him, I always find myself a little confused: put simply, why is he mentioned so frequently? Every introduction to probability and statistics features his little biography. They repeat the same portrait that you see here, which almost certainly bears no resemblance to the real man. They talk about drawing black and white stones from an urn without replacement; or performing medical tests for a rare disease that only 1 in 10,000 people have. He’s even famous enough that an entire philosophical movement is associated with his name, and nerds worldwide loudly proclaim themselves ‘Proud Bayesians’. All off the back of a theorem that our very own Rich Pang derived in two lines during his Imbizo tutorial. It just doesn’t make sense, what’s the deal?!</p>
+		<img src="bayes_law.JPG" alt="Bayes_Law" class = "center" style = "width:100%;max-width:400px;align:center;">				
+		<p>Well, Ladies and Gentleman, Boys and Girls, I think I might finally have got my head around this one. In an attempt to understand all that statistical mumbo-jumbo, I’ve been reading ‘Probability Theory: The Logic of Science’ by E. T. Jaynes. This book certainly filled one part of its role, I now finally understand what those mysterious things, P-values, t-tests and χ2 statistics, are. All my previous exposures to these horrendous constructs seemed to involve pulling an equation out of thin air and getting to work. In contrast, Jaynes describes them in a systematic way: as approximations to optimal statistical inference.</p>
+		<p>But the book also taught me about a philosophical battle that has been raging in statistics for the last century, all concerning the question: ‘what does probability mean?’</p>
+		<p>Now, I know it sounds like the kind of thing you’d hear from the wanker in the corner of a party (‘Ah, but man, like, ugh, what does it all MEAN? Haha, like, you know, sometimes, like, I think I’m TOO meta, haha, if that is possible, …, peace.’) But it turns out how you interpret probability can have a big influence on how you practice it, and it all revolves around the use of Bayes Theorem.</p>
+		<p>In the red corner we have the frequentists. They believe probability describes the expected frequency of a random event if you run it enough times, for example, the probability of a coin being heads is the proportion of times it comes up heads when you flip it infinitely many times. Frequentists ran statistics departments for most of the 20th century, perhaps they still do, and they think Bayes’ theorem is an abomination, badly defined and terribly subjective (what is the prior probability? How do you define it!?).</p>
+		<p>In the blue corner we have the Bayesians. This group view probability as the plausibility of an event. The phrase: ‘the probability of a coin coming up heads is half’ means you rate both heads and tails as equally plausible, without the need to run infinite experiments. They love Bayes’ theorem and would flip conditional probabilities all day long if they could. Further, it seems like every scientist with an opinion on this is a Bayesian, but that might just be a 21st century phenomena.</p>
+		<p>These don’t sound particularly different on first reading, but we can understand the difference in a simple example. Say you have a biased coin, and the probability of it coming up heads is some unknown number θ. You flip the coin 100 times and see 70 heads, what is your guess for θ?</p>
+		<p>A Bayesian says a quick prayer to the very reverend before progressing as follows. They know the probability of r heads in n flips is:</p>
+		<img src="bayes_maths1.JPG" alt="Bayes Maths 1" class = "center" style = "width:100%;max-width:250px;align:center;">				
+		<p>And let’s say their prior for θ is uniform between 0 and 1 (they’re completely ignorant about the coin’s bias). Then we apply our favourite theorem to get:</p>
+		<img src="bayes_maths2.JPG" alt="Bayes Maths 2" class = "center" style = "width:100%;max-width:200px;align:center;">
+		<p>You can do the maths, and it turns into the following curve:</p>
+		<img src="bayes_graph.JPG" alt="Bayes Graph" class = "center" style = "width:100%;max-width:500px;align:center;">
+		<p>Which makes a lot of sense, peaking nicely at θ = 0.7.  </p>
+		<p>But according to frequentists we’ve made a catastrophic conceptual error! How can we talk about P(θ|r, n) when θ is not a random variable?! Θ is a fixed property of the particular coin, it makes no sense to talk about the frequency with which θ occurs, hence its probability is not defined in a frequentist framework. That damn Reverend and his wily tricks!</p>
+		<p>Of course, we proud Bayesians will happily talk about the probability of θ. It just represents the plausibility of a particular value of θ, and from this advantageous conceptual starting point we quickly reached a reasonable (and in many ways, optimal) solution to our problem.</p>
+		<p>Jaynes was as proud a Bayesian as you could hope to find. In fact, he spends much of the book aggressively defending his work against the shadowy organisation of frequentists, while also taking swipes at most of modern mathematics and anyone else who happens to annoy him. (The book features some pretty spicy moments that I’ll collect below.) Why does he feel the need to do this? Well, it seems that for most of his life he was an outcast within the statistical community, all because of his love affair with our humble Revd Bayes. It gets quite sad at times, he has to devote entire chapters to tearing other arguments to shreds rather than doing something constructive, all over a philosophical disagreement.</p>
+		<p>Now is not the time to wade into the debate about what probability means, maybe we’ll save that for next issue. But I think we can finally answer one question. Why do people insist on teaching you about Bayes’ theorem as if it wasn’t obvious? Because for the last century nobody thought it was legitimate, they simply refused to use it! Thankfully, the situation has almost completely reversed in the last couple of decades, so you and I probably won’t have to put up with the kind of things Jaynes did. But there are a couple of lessons to be learnt here. Firstly, philosophical battles may seem like indulgent wastes of time, but there is no such thing as just ‘doing the maths’, we are all influenced by our beliefs, and perhaps we can avoid wasting another 100 years of discovery on false premises next time. Secondly, people being dickheads in Science is not a new phenomena!</p>
+	<hr style = "background-color:black;border:none;height:4px;">
+		<h4>Some juicy lines from E. T. Jaynes.</h4>
+		<ul>
+			<li style = "margin-bottom: 0em">John Venn (who made those famous diagrams) is ‘a philosopher without the tiniest fraction of Laplace’s [a hero of Jaynes] knowledge of either physics or mathematics’</li>
+			<li style = "margin: 0.25em">Fisher, who laid the foundations of much of 20th century statistics is ‘possessed of a colossal, overbearing ego.’</li>
+			<li style = "margin-bottom: 0em">Some life advice: ‘In any field, the most reliable and instantly recognizable sign of a fanatic is a lack of any sense of humour.’ Needless to say, Fisher had no sense of humour while Harold Jeffreys [another of Jaynes’ heros] was ‘a delight to converse with’.</li>
+			<li style = "margin: 0.25em">Meanwhile all physicists, such as Jaynes, are humble, kind and, of course, scientifically correct martyrs. It is, apparently, widely acknowledged that Einstein and Maxwell both knew how to take a joke, unlike statisticians.</li>
+			<li style = "margin-bottom: 0em">And don’t get him started on ‘the uneducated public,’ a group frequently deserving his scorn.</li>
+		</ul>
+	</div>
+</body>
+</html>
