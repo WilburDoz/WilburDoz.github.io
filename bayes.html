@@ -23,14 +23,14 @@
 		<h2><a href = "index.html" style = "text-decoration: none;">William Dorrell</a></h2>
 	    <h4 style = "margin-top: 1.em;margin-bottom:0em"> <a href = "index.html" style = "text-decoration: none;">Serious Things</a> </h4>
 	    <h4 style = "margin-top: 1.em;margin-bottom:0em"> <a href = "index2.html" style = "text-decoration: none;">Not-so-serious Things </a></h4>
-	    <p style = "margin-top: 0.25em;margin-bottom:0em;"> <a href="project.html">Projects/Thinkings</a> | <a href = "articles.html">Articles</a> | <a href="observations.html">Observations</a> | <a href="conjectures.html">Conjectures</a> | <a href="app.html">App</a> | <a href = "reading.html">Commonplace Book</a></p> 
+	    <p style = "margin-top: 0.25em;margin-bottom:0em;"> <a href = "articles.html">Articles</a></p> 
 	</div>
 	<hr style = "clear:both;border-top: 2px solid;">
 	<div id = "Text" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
 		<h3 style = "font-weight:bold;text-align:center;">Who's afraid of Thomas Bayes?</h3>
-		<img src="bayes.JPG" alt="Picture of Bayes" class = "center" style = "width:100%;max-width:250px;align:center;">						
+		<img src="bayes.jpg" alt="Picture of Bayes" class = "center" style = "width:100%;max-width:250px;align:center;">						
 		<p>Ah, the Revd Thomas Bayes. By all accounts, a nice man. And there’s no denying he had a knack with conditional probabilities. But whenever I hear about him, I always find myself a little confused: put simply, why is he mentioned so frequently? Every introduction to probability and statistics features his little biography. They repeat the same portrait that you see here, which almost certainly bears no resemblance to the real man. They talk about drawing black and white stones from an urn without replacement; or performing medical tests for a rare disease that only 1 in 10,000 people have. He’s even famous enough that an entire philosophical movement is associated with his name, and nerds worldwide loudly proclaim themselves ‘Proud Bayesians’. All off the back of a theorem that our very own Rich Pang derived in two lines during his Imbizo tutorial. It just doesn’t make sense, what’s the deal?!</p>
-		<img src="bayes_law.JPG" alt="Bayes_Law" class = "center" style = "width:100%;max-width:400px;align:center;">				
+		<img src="bayes_law.jpg" alt="Bayes_Law" class = "center" style = "width:100%;max-width:400px;align:center;">				
 		<p>Well, Ladies and Gentleman, Boys and Girls, I think I might finally have got my head around this one. In an attempt to understand all that statistical mumbo-jumbo, I’ve been reading ‘Probability Theory: The Logic of Science’ by E. T. Jaynes. This book certainly filled one part of its role, I now finally understand what those mysterious things, P-values, t-tests and χ2 statistics, are. All my previous exposures to these horrendous constructs seemed to involve pulling an equation out of thin air and getting to work. In contrast, Jaynes describes them in a systematic way: as approximations to optimal statistical inference.</p>
 		<p>But the book also taught me about a philosophical battle that has been raging in statistics for the last century, all concerning the question: ‘what does probability mean?’</p>
 		<p>Now, I know it sounds like the kind of thing you’d hear from the wanker in the corner of a party (‘Ah, but man, like, ugh, what does it all MEAN? Haha, like, you know, sometimes, like, I think I’m TOO meta, haha, if that is possible, …, peace.’) But it turns out how you interpret probability can have a big influence on how you practice it, and it all revolves around the use of Bayes Theorem.</p>
@@ -42,7 +42,7 @@
 		<p>And let’s say their prior for θ is uniform between 0 and 1 (they’re completely ignorant about the coin’s bias). Then we apply our favourite theorem to get:</p>
 		<img src="bayes_maths2.JPG" alt="Bayes Maths 2" class = "center" style = "width:100%;max-width:200px;align:center;">
 		<p>You can do the maths, and it turns into the following curve:</p>
-		<img src="bayes_graph.JPG" alt="Bayes Graph" class = "center" style = "width:100%;max-width:500px;align:center;">
+		<img src="bayes_graph.jpg" alt="Bayes Graph" class = "center" style = "width:100%;max-width:500px;align:center;">
 		<p>Which makes a lot of sense, peaking nicely at θ = 0.7.  </p>
 		<p>But according to frequentists we’ve made a catastrophic conceptual error! How can we talk about P(θ|r, n) when θ is not a random variable?! Θ is a fixed property of the particular coin, it makes no sense to talk about the frequency with which θ occurs, hence its probability is not defined in a frequentist framework. That damn Reverend and his wily tricks!</p>
 		<p>Of course, we proud Bayesians will happily talk about the probability of θ. It just represents the plausibility of a particular value of θ, and from this advantageous conceptual starting point we quickly reached a reasonable (and in many ways, optimal) solution to our problem.</p>
