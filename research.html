@@ -75,7 +75,7 @@
 		<h3 style = "font-weight:bold;text-align:center;">Learning minimally hierarchical control</h3>
 		<h4> Less Technical </h4>	
 		<p>When you reach to press a button most of the hard work of control is swept under the carpet. Rather than having to think 'contract left anterior deltoid, relax right bicep etc. etc.' you just think 'press the button.' In fact, even the process of reaching requires the careful control of tens of muscle but it seems effortless.
-		This level of effortlessness control far exceeds the current artificial equivalents. We tried to copy some of this effortless motor control in a very simple setup, using a controller that is able to apply (simulated) torques to a (simulated) pendulum.</p>
+		This level of effortlessness far exceeds the current artificial equivalents. We tried to copy some of this effortless motor control in a very simple setup, using a controller that is able to apply (simulated) torques to a (simulated) pendulum.</p>
 		<p>Our controller had two levels, like two managers. The higher level manager set goals for the lower level manager to fufill, for example by saying 'get the pendulum to 90 degrees', but it didn't worry about how to get there. The lower level manager took the goal set by its boss and exerted torques in order to reach it. So the higher
 		level manager is a bit like you thinking 'press the button', while the lower level manager is like your subconscious that performs the difficult task of choosing which muscles to contract to reach its goal.</p>
 		<p> We were able to adapt modern learning algorithms to this two leveled task, and we hope that future extensions of this scheme will prove useful in both improved artificial control as well as shedding light on how
@@ -106,10 +106,12 @@
 			are superconducting, meaning electrons can flow with zero resistance. There remain many mysteries around superconductivity
 			which if solved may permit their use in everyday settings, for example in the national grid, avoiding the wasted energy that is 
 			turned into heat by the resistance of the wire.</p>
-		<p>We recreated some of the behaviour of these materials but by replacing the electrons bouncing around atoms with sound
+		<p>In our intial paper we recreated some of the behaviour of these materials but by replacing the electrons bouncing around atoms with sound
 			bouncing around pillars. This means rather than doing experiments at freezing temperatures with minature devices we can just fire 
-			sound through an array of iron pillars. In future work we shall recreate the superconducting materials with sound in an attempt to learn
-			what causes the superconductivity.</p>
+			sound through an array of iron pillars. </p>
+		
+		<p>In a follow-on piece of work our team was able to recreate the key features of the superconducting metal within an acoustic system, which was 
+		super exciting to see!</p>
 		<hr style = "background-color:black;border:none;height:0.5px;">
 		<h4> More Technical </h4>
 		<p>Van der Waals heterostructures are an active frontier for discovering emergent phenomena in
@@ -124,7 +126,9 @@ van der Waals metamaterials can be used to explore, extend, and inform future el
 Furthermore, they allow the transfer of useful electronic behavior to acoustic systems, such as flat
 bands in magic-angle twisted bilayer graphene, which may aid the development of super-resolution
 ultrasound imagers</p>
-		<p> Read the paper <a href="https://arxiv.org/pdf/1909.13854.pdf">here</a>.</p>
+		<p> Read the original paper <a href="https://arxiv.org/pdf/1909.13854.pdf">here</a>.</p>
+		<p> This has since been extended, and a recent paper of ours outlines one approach to simulating the flat bands of twisted bilayer graphene in 
+			acoustics, see the paper <a href="https://iopscience.iop.org/article/10.1088/2053-1583/abf252/meta">here</a>. (Or the version on <a href="https://arxiv.org/pdf/2010.10037.pdf">arxiv<\a>)<\p>
 		<img src="meta.JPG" alt="Metamaterials Research Picture" class = "center" style = "width:100%;max-width:700px;align:center;">
 		<p style = "font-size:10pt;">Figure 3: (a) We recreated interlayer hopping in bilayer
 graphene using (b) two layers of honeycomb metamaterial
