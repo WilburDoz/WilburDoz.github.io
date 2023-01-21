@@ -13,7 +13,7 @@
 </head>
 <body style="background-color:powderblue;">
 	<div id="image" style="float:left;">
-		<img src="../images/MeTwo.jpg" alt="Picture of me" style = "max-width:160px;">
+		<img src="images/MeTwo.jpg" alt="Picture of me" style = "max-width:160px;">
 	</div>
 
 	<div id="Text"  style = "float:left;text-align:left;margin-left:15px;font-family: Arial;">
@@ -24,126 +24,53 @@
 	</div>
   <hr style = "clear:both;border-top: 2px solid;">
   <div id = "Text" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
-	<div id = "olfaction">
-		<h3 style = "font-weight:bold;text-align:center;"> Bilateral Olfaction </h3>
-		<h4> Less Technical</h4>
-		<p>Have you ever wondered why we have two nostrils? Humans are mostly symmetric, especially when seen from the outside; so perhaps it might make sense to have two nostrils.
-			But, there are many cases of asymmetry in the human body: we have one heart on the left side of our body, our lungs are lopsided, and
-			we have only one mouth. Perhaps you could imagine a version of a human that had one large nostril in the middle of our face, why not?</p>
-		<p>Well, we can learn something from the example of our ears (of which we tend to have two). Our brains make use of the two independent sensors to calculate distances. By measuring the 
-			separation in time between a sound hitting first one then the other ear, the brain calculates the direction that the sound came from: for example, if the sound arrives at the left ear first it must have come from the 
-			left side. If you've ever seen your dog cock their head it is supposedly to improve this locating ability.</p>
-		<p>So, could the brain be doing something similar with two nostrils? By comparing between the two of them it might be able to locate the direction your dinner is coming from? Or perhaps the two nostrils serve some
-			more exotic function?</p>
-		<p>In this study my colleagues measured the brain's response to smells when they arrived in either the left or the right nostril of some nice lab mice; perhaps by seeing how the brain responds to odours in each nostril we could begin
-			to understand the function dual nostrils serve. We found that the brain's response to left and right nostrils were remarkably similar. This was particularly surprising given recent findings, which led us to conclude that
-			some mechanism must ensure the response to left and right nostrils are the same. I built a model illustrating one potenital mechanism and showed that it agreed with the experimental data. This suggests that early in life the brain learns to
-			to align the response to different nostrils: i.e. in very young children perhaps oranges do smell different depending on which nostril you use, but this difference disappears as you grow up!</p>
-			<p> So, no conclusive answer to why we have two nostrils, but our study added a piece to the ongoing puzzle!</p>
-			<hr style = "background-color:black;border:none;height:0.5px;">
-		<h4> More Technical </h4>
-		<p> Our research was motivated by two facts. First, a person’s two nostrils are independent
-		measuring devices that do not share information with each other before reaching the cortex.
-		Second, olfactory information is scrambled between the nose and the brain, with each olfactory
-		cortical neuron connected to a random subset of those in the nose. Taken together, this means that
-		each brain hemisphere is presented with a differently scrambled, seemingly inconsistent, window
-		onto the olfactory environment. We therefore asked: ‘does the olfactory cortex align these two
-		pictures? And if so, how?’</p>
-		<p>To answer these questions, our experimental collaborators in Professor Venkatesh Murthy’s group
-			recorded neurons from the olfactory cortex of mice as odours were presented selectively to each
-			nostril. From their recordings, we demonstrated that responses to odours from the left and right
-			nostrils are highly correlated in each side of the brain. In contrast, I demonstrated that a random
-			intercortical connection would lead to an uncorrelated representation, hence the connection must 
-			be somehow structured. Further, I built a computational model that illustrated how matched odour
-			representations could readily arise from conventional Hebbian plasticity. The structured
-			interhemispheric connectivity we unearthed demonstrates that the brain builds consistent internal
-			representations, even when presented with seemingly inconsistent inputs</p>
-			<p> Read the paper <a href="https://www.biorxiv.org/content/10.1101/2020.02.24.960922v1.full.pdf">here</a>.</p>
-		<img src="../images/olfaction.JPG" alt="Olfaction Research Picture" class = "center" style = "width:100%;max-width:1000px;align:center;">
-		<p style = "font-size:10pt;"> Figure 1: (A) Diagram of the model. (B) - (D) Show the model matches the distribution of responses observed in the data for (B) how many odours trigger each neuron, (C) how much the neurons are activated, and (D) the percentage of the time each neuron is activated rather than inhibited.
-		(E) - (J) Make various comparisons between the model and the data as alpha is changed from 0, a random connection between the two olfactory cortices, to 1, a purely Hebbian structured connection. We can see that around alpha = 0.4 the data is best matched. In fact, it fits really well, given how simple the model is!</p>
-		<hr style = "background-color:black;border:none;height:0.5px;">
-		<h4> Some Motivation</h4>
-		<h6> (or why on earth did someone pay him to research that?!)</h6>
-		<p>One reason for exploring this is certainly curiosity, in fact that might be the only reason, who doesn't want to know why we have two rather than one, three, or forty nostrils?!</p>
-		<p>But one form of the curiosity is particularly intriguing. Many recent in advancements in cutting-edge AI have come from incorporating aspects of visual neuroscience into artificial neural networks (creating convolutional neural nets - CNNs). But the visual system shows only one form of biological sensory processing, and a form 
-		of processing that is particularly tuned to the characteristics of visual stimuli (for example two neighbouring pixels in a random image have a high likelihood of being the same colour, CNNs make use of this). Our sense of smell has learned to process a completely different form of sensory data - odorants, mixtures of chemicals, and the number of potential chemicals is vast.
-		This form of data is much harder to understand with a CNN, and shares some similarities with other 'high-dimensional datasets' like genetic data. Perhaps by understanding the tricks the nose uses to make sense of smells we can improve our artificial methods of understanding high-dimensional data.
-	</div>
-	<hr style = "background-color:black;border:none;height:4px;">
-	<div id = "okinawa">		
-		<h3 style = "font-weight:bold;text-align:center;">Learning minimally hierarchical control</h3>
-		<h4> Less Technical </h4>	
-		<p>When you reach to press a button most of the hard work of control is swept under the carpet. Rather than having to think 'contract left anterior deltoid, relax right bicep etc. etc.' you just think 'press the button.' In fact, even the process of reaching requires the careful control of tens of muscle but it seems effortless.
-		This level of effortlessness far exceeds the current artificial equivalents. We tried to copy some of this effortless motor control in a very simple setup, using a controller that is able to apply (simulated) torques to a (simulated) pendulum.</p>
-		<p>Our controller had two levels, like two managers. The higher level manager set goals for the lower level manager to fufill, for example by saying 'get the pendulum to 90 degrees', but it didn't worry about how to get there. The lower level manager took the goal set by its boss and exerted torques in order to reach it. So the higher
-		level manager is a bit like you thinking 'press the button', while the lower level manager is like your subconscious that performs the difficult task of choosing which muscles to contract to reach its goal.</p>
-		<p> We were able to adapt modern learning algorithms to this two leveled task, and we hope that future extensions of this scheme will prove useful in both improved artificial control as well as shedding light on how
-		your body achieves the fine motor skills it is capable of - which could perhaps help in medical cases where patients lose motor control.</p>
-		<hr style = "background-color:black;border:none;height:0.5px;">
-		<h4> More Technical </h4>
-		As part of a broader piece of work I created an easily trained actor-critic architecture for bio-plausible two-level control of a pendulum. The bottom level consists of feedback controllers that when given a target angle exert torques proportional to the difference between current and target position.
-		The higher level consists of a network that sets goal angles. An added difficulty of working with a periodic variable (the angle of the pendulum) is that, depending on the position of 0 degrees round the circle - i.e. the co-ordinate choice, the feedback controller may not behave optimally. For example,
-		if the goal angle is 1 degree, and the current angle is 359 a simple feedback controller might exert a exert a large negative rather than a small positive torque. To sidestep this we included two feedback controllers with 0 points 180 degrees away from one another. It therefore became the task of the higher level manager to choose not only the desired angle,
-		but also which feedback controller to use.</p>
-		<p> Our setup used bio-plausible reinforcement learning to learn both the goal angle (fourth column in the image below), and which controller to use in each region (third column). Hence, we show a level of hierarchical control in a non-monotonic setup, a possible starting point for future explorations of 
-		hierarchical reinforcement learning.</p>
-		<p> Read the paper <a href="https://arxiv.org/pdf/2006.13471.pdf">here</a>.</p>
-		<img src="../images/okinawa.JPG" alt="Okinawa Research Picture" class = "center" style = "width:100%;max-width:1000px;align:center;">
-		<p style = "font-size:10pt;">Figure 2: On the right, the actor-critic architecture that chose an angle to track to. On the left, a comparison of initial and final control. At the beginning the controller struggles: the red line does not track the blue, whereas by the end it is tracking closely. The three diagrams show the choices made by the controller, in this case an optimal policy that tracks from current to desired angle.</p>	
-	</div>
-	<hr style = "background-color:black;border:none;height:4px;">
-	<div id = "meta">
-		<h3 style = "font-weight:bold;text-align:center;">van der Waals Metamaterials</h3>
-		<h4> Less Technical </h4>			
-		<p>The behaviour of solids is determined by interactions between the elements that make them up;
-			for example, if there are free electrons in a metal it will conduct electricity. But it is 
-			suprising how much of the behaviour is just a result of geometry: send a wave (for example sound) through a lattice
-			of pillars and the way the sound bounces around will be similar in many respects to the way
-			an electron bounces through a lattice of metal atoms.</p>
-		<p>There's been a class of materials that have caused much excitement recently: van der Waals materials. These are made
-			from layers of atoms much like the two layer structure in Figure 3A below. It has recently been found that some of these materials
-			are superconducting, meaning electrons can flow with zero resistance. There remain many mysteries around superconductivity
-			which if solved may permit their use in everyday settings, for example in the national grid, avoiding the wasted energy that is 
-			turned into heat by the resistance of the wire.</p>
-		<p>In our intial paper we recreated some of the behaviour of these materials but by replacing the electrons bouncing around atoms with sound
-			bouncing around pillars. This means rather than doing experiments at freezing temperatures with minature devices we can just fire 
-			sound through an array of iron pillars. </p>
-		
-		<p>In a follow-on piece of work our team was able to recreate the key features of the superconducting metal within an acoustic system, which was 
-		super exciting to see!</p>
-		<hr style = "background-color:black;border:none;height:0.5px;">
-		<h4> More Technical </h4>
-		<p>Van der Waals heterostructures are an active frontier for discovering emergent phenomena in
-condensed matter systems. They are constructed by stacking elements of a large library of 2-dimensional materials that couple together through van der Waals interactions. However, the
-number of possible combinations within this library is staggering, so fully exploring their potential is a daunting task. We introduced van der Waals metamaterials to rapidly prototype and
-screen their quantum counterparts. These layered metamaterials are designed to reshape the flow
-of ultrasound to mimic electron motion. In particular, we show how to construct analogues of all
-stacking configurations of bilayer and trilayer graphene through the use of interlayer membranes
-that emulate van der Waals interactions. By changing the membrane’s density and thickness, we
-can also reach coupling regimes far beyond that of naturally occurring graphene. We anticipate that
-van der Waals metamaterials can be used to explore, extend, and inform future electronic devices.
-Furthermore, they allow the transfer of useful electronic behavior to acoustic systems, such as flat
-bands in magic-angle twisted bilayer graphene, which may aid the development of super-resolution
-ultrasound imagers</p>
-		<p> Read the original paper <a href="https://arxiv.org/pdf/1909.13854.pdf">here</a>.</p>
-		<p> This has since been extended to simulating the flat bands of twisted bilayer graphene in 
-			acoustics, see the paper <a href="https://iopscience.iop.org/article/10.1088/2053-1583/abf252/meta">here</a>. (Or the version on <a href="https://arxiv.org/pdf/2010.10037.pdf">arxiv</a>)</p>
-			<br>
-		<img src="../images/meta.JPG" alt="Metamaterials Research Picture" class = "center" style = "width:100%;max-width:700px;align:center;">
-		<p style = "font-size:10pt;">Figure 3: (a) We recreated interlayer hopping in bilayer
-graphene using (b) two layers of honeycomb metamaterial
-separated by a flexible membrane. (c) In AB-stacked bilayer
-graphene, the Dirac cones hybridize to create a ‘kissing’ band
-structure. (d) With an interlayer membrane made of 0.19-mm
-thick HDPE, the same effect is seen in our bilayer metamaterial. This effect is well described by the same tight-binding
-Hamiltonian used to describe bilayer graphene (inset). (e)
-In AA-stacked bilayer graphene, the structure of the Dirac
-cone changes. (f) By stacking our metamaterial in the AA
-configuration, it accurately captures the AA graphene Dirac
-cone structure. </p>		
-		<hr style = "background-color:black;border:none;height:2px;">
-	</div>
+	  <p>Scientific projects during my PhD:</p>
+
+	  <ul>
+		  <li style = "margin-bottom: 1em">Finding a Circuit's Inductive Bias, TLDR: designed a tool to learn tasks that a
+			  circuit you're interested in finds easy to learn.
+
+			  How do we generalise?
+
+		  </li>
+
+		  <li style = "margin-bottom: 1em">Unsupervised Decoding of Mouse Dreams, TLDR: adapted a Bayesian spike-sequence detection algorithm to
+			  recover the content of mice's thoughts during sleep.
+
+			  <p>Emmett Thompson in the SWC, with the Stephenson-Jones lab, measured the neural activity of mice as they performed a stereotyped action (like
+			  typing your password), and as they slept. We adapted a very nice recent hierarchical Bayesian point-process algorithm, <a href="https://github.com/lindermanlab/PPSeq.jl">PPSeq</a>,
+			  in an effort to spot patterns in the neural data (i.e. every time the mouse leans this way these neurons activate like this), then go find the same
+			  patterns in the data while the mouse was sleeping. We found evidence that while the mouse is sleeping the same patterns are replaying,
+			  suggesting the mouse might be thinking about the actions it spent all day doing!</p>
+
+			  <p>Now the experimental team is looking to see what role this replay plays. It could be functional, like if you practice the piano then go to sleep, you'll
+			  be better when you wake up. This could be because your brain is replaying the patterns it learned during the day. This can all be tested with fancy optogenetic
+			  tools and the like. Expect news soon!</p>
+
+			  <p>The theory side of this was a very fun collaboration with <a href="https://github.com/TomGeorge1234/">Tom George</a>, <a href="https://clementinedomine.github.io/">Clementine Domine</a>, and Rodrigo Carrasco-Davis.</p>
+		  </li>
+	  </ul>
+
+	  <p>Between undergrad and PhD:</p>
+		<ul>
+			<li style = "margin-bottom: 1em"> <a href = "./html/bilateral_olfaction.html">Bilateral Olfaction</a>, TLDR: Analysed olfactory responses to odours in one nostril and used them to build a model of how two hemispheres communicate.
+				<p>My first foray into theoretical neuroscience, why do we have two nostrils?! I analysed neural from the olfactory cortex as odours
+			were smelt in the nostril on the same or different side, and asked whether they were different. They weren't very, which was a puzzle given the random scrambling that's supposed to happen in the olfactory system, so we
+			build a model to explain this!</p></li>
+			<li style = "margin-bottom: 1em"> <a href = "./html/okinawa_research.html">Bio-Plausible Hierarchical Reinforcment Learning</a>, TLDR: adapted some hierarchical RL control algorithms to be bio-plausible.
+
+				<p>My project in Okinawa with Sergio Veduzco-Flores, we adapted hierarchical reinforcement learning algorithms
+			to work biologically-plausibly! These are two algorithms controlling an arm type thing: the top one (the manager) says 'get the arm here' and the bottom one (worker) says 'okay boss, moving muscles to get arm here'. The manager
+			learns to choose good instructions so the complete agents succeeds, the worker learns to do what the manager says!</p></li>
+			<li style = "margin: 1em"><p><a href = "./html/metamaterials.html">Acoustic Metamaterials</a>, TLDR: made an acoustic metamaterial mimic of bilayer graphene.
+				<p>I used to be a condensed matter physicist, interested in understanding the weird ways large collections of atoms start behaving.
+				Often these are funky quantum systems, colder than outer space, carefully isolated from the outside world. But! Surprisingly, many of these interesting phenomena have analogues in much simpler systems. The
+				equations which govern electrons have similarities to those that govern simple waves (e.g. sound), so you can make analogues of weird electronic effects using sound waves. This is (A) cool, (B) allows you to study
+				the same phenomena but at room temperature with nothing more complex than a lattice of iron pillars, a speaker, and a microphone, (C) allows technological transfer, either making better acoustic devices thanks to
+				the last century of condensed matter physics, or using acoustics to rapidly prototype the very fiddly little quantum devices in simple acoustics first, then try them in quantum world!</p>
+
+			I developed just such an acoustic mimic of a current system of much interest, van der Waals materials, and their superstar family member (superstar because it superconducts, which is a holy grail of condensed matter physics), magic angle twisted bilayer graphene.</li>
+		</ul>
   </div>
 </body>
 </html>
