@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+  <title>Will's Wild Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  </style>
+    <div id="image" style="float:left;">
+		<img src="../images/MeTwo.jpg" alt="Picture of me" style = "max-width:160px;">
+	</div>
+
+	<div id="Text"  style = "float:left;text-align:left;margin-left:15px;font-family: Arial;">
+		<h2><a href = "index.html" style = "text-decoration: none;">William Dorrell</a></h2>
+	    <h4 style = "margin-top: 1.25em;margin-bottom:0em"> <a href = "index.html" style = "text-decoration: none;">Serious Things</a> </h4>
+	    <p style = "margin-top: 0.25em;"> <a href = "research.html">Research</a> | <a href="CV.html">CV</a> | <a href = "resources.html">Resources</a></p>
+	    <h4 style = "margin-top: 1.75em;margin-bottom:0em"> <a href = "index2.html" style = "text-decoration: none;">Not-so-serious Things </a></h4>
+	</div>
+</head>
+<body style="background-color:powderblue;">
+	<hr style = "clear:both;border-top: 2px solid;">
+	<div id = "Text" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
+        <h3 style = "font-weight:bold;text-align:center;"> Resources for Theoretical Neuroscience and Machine Learning </h3>
+        <p> Theoretical neuroscience and machine learning are both research areas that draw from a wide variety of fields (biology/maths/physics/engineering/computer science/psychology
+            to name a few), and people join the field with many academic backgrounds. This set of materials is my ongoing list of useful background (and occasionally foreground) resources.
+            It is very much an ongoing piece of work, if you have any comments or suggestions please email
+            dorrellwec "at" gmail "dot" com. They are grouped by rough subject area.</p>
+        <div id = "machine_learning">
+		<h4 style = "font-weight:bold;font-style:italic;"> Machine Learning</h4>
+        <p>There are many good free online courses in machine learning, I list three ones that either I took and enjoyed, or look good. They cover the same material, so one is enough. The usual set of pre-requisites is good
+            basic knowledge of probability/statistics, calculus, and linear algebra. If you feel you do not have that, then I would recommend learning <a href="./resources.html#maths">those first</a>. They all have coding components, since machine learning is about 
+            using computers, so again, if you haven't learnt to code yet I would recommend doing <a href="./resources.html#coding">that first</a>.
+        </p>
+        <ul>
+			<li style = "margin-bottom: 0em"><a href="https://harvard-ml-courses.github.io/cs181-web/">Harvard's CS181</a>: I took this course and really enjoyed it, good for people with the maths background. 
+                The webpage freely hosts the 2021 version of the course, complete with lectute videos, slide decks, ipad notes, and a full (and fairly high quality) <a href="https://raw.githubusercontent.com/harvard-ml-courses/cs181-textbook/master/Textbook.pdf">textbook of the course!</a></li>
+			<li style = "margin-bottom: 0.25em"><a href="https://www.coursera.org/learn/machine-learning">Andrew Ng's Coursera Course</a>: This is a pretty famous course taken by loads of people with very high reviews. It's almost certainly excellent, though I can't vouch for it myself.</li>
+			<li style = "margin-bottom: 0em"><a href="https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/">Oxford Machine Learning Course</a>: A course I've been told is good, complete with slides, videos, practicals and problem sets. It's a little old (2015), but I can't find a
+            more up to date version of the course freely available.</li>
+        </ul> 
+
+        There are a few other resources that I think are worth mentioning, either textbooks or youtube videos:
+        <ul>
+			<li style = "margin-bottom: 0em"><a href="https://www.inference.org.uk/itprnn/book.pdf">Information Theory, Inference, and Learning Algorithm's</a>: a fabulous and incredibly insightful textbook by David MacKay (also with free pdf). Full of novel
+            ideas and still surprisingly relevant for machine learning despite being nearly 20 years old. It won't fill you in on the cutting edge ML, but it will make you understand it better once you're there.</li>
+			<li style = "margin-bottom: 0.25em"><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi">3Blue1Brown Neural Network Videos</a>: A youtube series explaining neural networks, it's really great, like all of the videos on this channel.</li>
+			<li style = "margin-bottom: 0em"><a href="http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf">Pattern Recognition and Machine Learning</a>: 
+            Christopher Bishop's classic text for learning machine learning, it does an excellent job of introducing all the material and there's a free pdf at the link. It's less insightful than MacKay, but I used it as a reference while taking one of the courses listed above,
+            in that role it excelled.</li>
+            <li style = "margin-bottom: 0em"><a href="http://incompleteideas.net/book/the-book.html">Sutton and Barto's RL Textbook</a> is the standard to learn reinforcement learning from, and for good reason.
+                It is an excellent well presented book, and the pdf is free online, what more could you want?</li>
+        </ul>         
+        </div>
+        <div id = "maths">
+            <h4 style = "font-weight:bold;font-style:italic;">Maths</h4>
+            <p>Both machine learning and theoretical neurscience are kind of fields of applied maths, and require good maths skills. In my opinion, the pre-requisites are a working knowledge of
+                linear algebra, probability & statistics, and calculus/differential equations. All of these are covered in thousands of courses, I list below a couple of particularly good or comprehensive options:
+            </p>
+            <ul>
+                <li style = "margin-bottom: 0em"><a href = "https://ocw.mit.edu/index.html">MIT opencourseware</a> is a website that hosts loads of the courses taught at MIT, often complete with notes and videos of lectures. You can probably 
+            find all sorts there, some examples:
+        <ul>
+            <li> 18.01,18.02,18.03: improve your calculus</li>
+            <li> 18.05: statistics</li>
+        </ul>
+        <li style = "margin-bottom: 0em">The youtube channel <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3Blue1Brown</a> has great content on calculus, linear algebra, fourier series, complex numbers, linear algebra, differential equations and more! </li>
+        <li style = "margin-bottom: 0em">I learnt linear Algebra from Gilbert Strang's famous <a href="https://math.mit.edu/~gs/linearalgebra/">book</a>, I really recommend it.</li>
+            </ul>  
+
+        <p> Beyond these basics that everyone should definitely know, I've used a few good resources to extend my maths knowledge when needed, and would recommend them to others:</p> 
+        <ul>
+            <li style = "margin-bottom: 0em">Group Theory: <a href = "http://web.bentley.edu/empl/c/ncarter/vgt/">Visual Group Theory</a> by Nathan Carter. It starts very (I mean very) basic but by the end it has covered some serious material in a very intuitive way. I accessed it through my university library, so have no online pdf.</li>
+            <li style = "margin-bottom: 0em">Lie Theory: <a href = "https://www.springer.com/gp/book/9780387782140">Naive Lie Theory</a> by John Stillwell was a nice introduction. I didn't use an online pdf.</li>
+            <li style = "margin-bottom: 0em">Topology: <a href = "https://dec41.user.srcf.net/notes/">Dexter Chua</a> has notes for loads of the maths courses taught at Cambridge. The courses are, as far as I can tell, thorough, and his notes are good. I studied the basic topology course and enjoyed it.</li>
+            <li style = "margin-bottom: 0em">Complex Analysis: <a href = "https://umv.science.upjs.sk/hutnik/NeedhamVCA.pdf">Visual Complex Analysis</a> by Tristan Needham looks excellent. I admit, I got distracted before my attempt to read this book took off (covid suddenly forced me to uproot), but it looks excellent, and receives rave reviews.</li>
+            <li style = "margin-bottom: 0em">Bayesian Non-parametrcs:<a href = "http://www.gatsby.ucl.ac.uk/~porbanz/papers/porbanz_BNP_draft.pdf">Peter Orbanz's</a> notes are supremely clear.</li>
+        </ul>
+        </div>
+        <div id = "maths_for_neuro">
+            <h4 style = "font-weight:bold;font-style:italic;">Maths for Neuroscientists/Computational Neuroscience</h4>
+            <p> There's a special set of resources that aim to train maths for neuroscientists. I don't know how good any of these are personally, but they've been recommended to me, may they prove useful to you:</p>
+            <ul>
+                <li style = "margin-bottom: 0em"><a href = " https://www.cns.nyu.edu/~eero/math-tools/">Mathematical Tools for Neural and Cognitive Science</a>: a course at NYU by Eero Simoncelli, all lectures on youtube.</li>
+                <li style = "margin-bottom: 0em"><a href = "https://github.com/ebatty/MathToolsforNeuroscience">Mathematical Tools for Neuroscience</a>: a similar Harvard course that doesn't assume too much and has a good-looking syllabus.</li>
+                <li style = "margin-bottom: 0em"><a href = "https://academy.neuromatch.io/">Neuromatch Academy:</a> is a free online comp neuro summer school that I've heard is excellent. I think you can either access the resources through the link or attend next time they run it!</li>
+            </ul>
+
+        </div>
+        
+        <div id = "coding">
+            <h4 style = "font-weight:bold;font-style:italic;">Coding</h4>
+
+            <p>I've been asked how to learn coding before, and I don't quite know what to answer. I, like most of the people I've met, basically learnt by trying, failing, and googling the answer on stack overflow. I recommend this route to others.
+                Come up with some fun projects, preferably with a friend, and try coding them up. A quick prime number generator, implement an RL agent that learns to navigate a gird world, make a simple game, that kind of thing. And I'd recommend 
+                learning python, the coding language most used in science. That said, there are plenty of online resources that might help, I list a couple:</p>
+                <ul>
+                    <li style = "margin-bottom: 0em"><a href = "https://online-learning.harvard.edu/course/cs50-introduction-computer-science?delta=0">CS50</a>: Harvard run an intro to computer science that is free and online, probably a good start. I like the approach they take because it focuses on concepts rather than syntax.</li>
+                    <li style = "margin-bottom: 0em">I have a friend that read "Learn Python the Hard Way" and said it was very good.</li>
+                </ul>
+  
+                   </div>
+
+        <div id = "sys_neuro">
+            <h4 style = "font-weight:bold;font-style:italic;">Neuroscience</h4>
+
+            <p>I've found it both very easy and very hard to learn neuroscience, having spent my undergrad as a physicist. To some extent there's no big theories like relativity that are universally assumed knowledge for astronmers, 
+                so there's less of a checklist of things you need to learn before you can even have a useful conversation. And I've found that if you have a specific project or question at hand then 
+                you can usually learn the requisite material from a few papers. That said, there are some core biology and neuroscience ideas that you should know, they are shocking really, and everyone should know them for culture.
+                And once you try and start forming some cohesive understanding of neuroscience, like I was used to doing in physics, you're somewhat stumped by the fact that it appears not to exist.
+                </p>
+                <p> In terms of basic biology, I'm talking the basics of life: DNA, cells, respiration, if you don't know this stuff you should, it's mind-boggling. I learnt it in lectures and was boggled. I suspect an author
+                    like Bill Bryson would do a good job (he has recently released a book on the human body, and the short history of nearly everything I think covers biochemistry). Beyond that I'm not sure.
+                </p>
+                <p> Then for neuroscience I again am unsure. There's some basics you should know, about how neurons work, how the basics of information transmission could operate within them.</p>
+                <p> And then you get beyond the basics that we definitely know, and you want to understand how the brain works. Well then I'm stumped, the best I can advise is Kandel's Principles of Neural Science which is full of information and readable.</p>
+                <p>One thing I will say is that I DO NOT recommend Dayan & Abbot's theoretical neuroscience textbook. I didn't enjoy it, and I suspect it is only popular because it is the only such textbook in existence.</p>
+        </div>
+        <div id = "other">
+            <h4 style = "font-weight:bold;font-style:italic;">Other People's Lists</h4>
+
+            <p>Other people have written similar lists to me, I recommend refering to them too:</p>
+            <ul>
+                <li><a href = "https://rkp.science/tutorials/">Rich Pang</a></li>
+                <li><a href = "https://leaduncker.github.io/resources/"> Lea Duncker</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
