@@ -19,23 +19,151 @@
 	<div id="Text"  style = "float:left;text-align:left;margin-left:15px;font-family: Arial;">
 		<h2><a href = "index.html" style = "text-decoration: none;">William Dorrell</a></h2>
 	    <h4 style = "margin-top: 1.25em;margin-bottom:0em"> <a href = "index.html" style = "text-decoration: none;">Serious Things</a> </h4>
-	    <p style = "margin-top: 0.25em;"> <a href = "research.html">Research</a> | <a href="CV.html">CV</a> | <a href = "resources.html">Resources</a></p>
+	    <p style = "margin-top: 0.25em;"> <a href = "research.html">Research</a> | <a href="CV.html">CV</a> | <a href = "resources.html">Resources</a> | <a href = "TN_notes.html">Gatsby TN Notes</a></p>
 	    <h4 style = "margin-top: 1.75em;margin-bottom:0em"> <a href = "index2.html" style = "text-decoration: none;">Not-so-serious Things </a></h4>
 	</div>
   <hr style = "clear:both;border-top: 2px solid;">
   <div id = "Text" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
-	  <p>Scientific projects during my PhD:</p>
-
+	  <p style="font-weight:bold;text-align:center;"><font size="+3">My Current Research (Jan 2023)</font></p>
+	  <p>The major thrust of my thinking at the moment concerns how animals learn and exploit structure in the world.</p>
+	  <p>The world has manifold repeating patterns; from the mundane (things tend to fall unless supported), to the obscure
+	  (like a dense mathematical theorem, or musical structures like a fugue). How is it that a completely uninitiated human can,
+	  after tuition and effort, come to understand these mathematical or musical structures (among many others), often so well that they can then play
+	  creatively with the structure, developing new inventions, elaborations, insights, or analogising between seemingly disparate situations?</p>
+	  <p>Well, finding this structure requires seeing the world in the certain way, a representational question. For example, being able to conceptualise
+	  sound as notes on the western musical scale seems a pre-requisite to understanding the fugue's musical structure. You need to know what
+	  parts of your stimulus are important for the current situation. Then you need to learn the patterns, and their predictabilities.</p>
+	  <p>Shockingly, in a way that has directed a lot of my recent thinking, these same phenomena can be examined in lab mice. The immensly
+	  talented <a href="https://www.mrcbndu.ox.ac.uk/people/dr-mohamady-el-gaby">Dr. Mohamady El-Gaby</a>, in Prof. Behrens' lab, has trained
+	  mice to learn the structure of a task, and there are neural recordings of the implicated brain regions (prefrontal cortex) in mice
+	  as they learn the task from complete beginners to experts. This is hella exciting!</p>
+	  <p>Mohamady and gang have worked out how the mice solve the task once they are experts, and it involves the most shocking
+	  and beautiful neural representation you could ask for (see <a href="https://twitter.com/GabyMohamady/status/1578351583544213506">here</a>).
+	  I am now super interested in thinking about the algorithms at work in discovering the appropriate structural elements,
+	  and piecing them together, and using this to try and match the observations all the way down to neural firing rate predictions.</p>
+	  <p><font size =+1><b>All Scientific Projects</b></font></p>
+	  <p>I'm interested in basically anything with structure (hehe), and have done work in condensed matter physics, a
+	  few areas of theory for neuroscience, and machine learning. Here's the full run-down with extended descriptions of most below.</p>
 	  <ul>
-		  <li style = "margin-bottom: 1em">Finding a Circuit's Inductive Bias, TLDR: designed a tool to learn tasks that a
-			  circuit you're interested in finds easy to learn.
+		  <li style = "margin-bottom: 0em">Discovery and use of structure by neural systems.</li>
+		  <li style = "margin-bottom: 0em">Model-Based RL agents with inductively structured world models.</li>
+		  <li style = "margin-bottom: 0em">Actionable Neural Representations: A Normative Theory of Grid Cells. Paper <a href="https://arxiv.org/abs/2209.15563">here</a></li>
+		  <li style = "margin-bottom: 0em">Biological Constraints Lead to Disentangling and Functional Cell Types. Paper <a href="https://arxiv.org/abs/2210.01768">here</a></li>
+		  <li style = "margin-bottom: 0em">Meta-Learning the Inductive Biases of Neural Circuits. Paper <a href="https://arxiv.org/abs/2211.13544">here</a></li>
+		  <li style = "margin-bottom: 0em">Using Inductive Bias to Understand Cerebellar Connectivity</li>
+		  <li style = "margin-bottom: 0em">Unsupervised discovery of action replay in sleeping mice</li>
+		  <li style = "margin-bottom: 0em">Building a bio-plausible hierarchical reinforcement learning agent. Paper <a href="https://www.sciencedirect.com/science/article/pii/S0893608022000727">here</a></li>
+		  <li style = "margin-bottom: 0em">Modelling the bilateral interaction of olfactory information. Paper <a href="https://www.biorxiv.org/content/10.1101/2020.02.24.960922v2.abstract">here</a></li>
+		  <li style = "margin-bottom: 0em">Creating an acoustic meta-material mimic of van der Waals materials. Papers <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.121103">here</a> and <a href ="https://iopscience.iop.org/article/10.1088/2053-1583/abf252/meta">here.</a></li>
+	  </ul>
+	<hr style = "clear:both;border-top: 2px solid;">
+	  <p style="font-weight:bold;text-align:center;"><font size="+3">Neural Representation Theory</font></p>
+	  <p><font size =+1><b>Actionable Neural Representations: A Normative Theory of Grid Cells</b></font></p>
+	  <p><i>TLDR: we use group & representation theory to formalise a good representation of space,
+		  and use it to predict grid cells and many of their related phenomena.</p></i>
+	  <img src="./images/research/grids.PNG" alt="metalearning" ALIGN="right" class = "padding" width="60%	"/>
 
-			  How do we generalise?
+	  <p>I am continually astounded by the beauty of grid cells. First there were place cells, neurons that fire
+	  when you are in a particular position in an environment (like the northeast corner of a room), which showed the brain
+	  was encoding a meaningful cognitive variable like 2D position, cool, but not beautiful. Then the Mosers and team found grid cells, neurons that fire
+	  not in one position in an environment, <i>but in a hexagonal lattice of positions</i>! Further, these grid cells do not
+	  choose any arbitrary lattice. No, no. At any one time they come in groups (modules), of which there are maybe about 7 in rats, and
+	  all members of the group have lattices that are translated versions of one another; wild!!!</p>
 
-		  </li>
+	  <p>WHY?????</p>
 
-		  <li style = "margin-bottom: 1em">Unsupervised Decoding of Mouse Dreams, TLDR: adapted a Bayesian spike-sequence detection algorithm to
-			  recover the content of mice's thoughts during sleep.
+	  <p>Why does the brain choose to represent information this way? It seems so weird and beautiful!</p>
+
+	  <p>Building on a decade of theory and experiment, we develop a normative theory for why grid cells are the best representation
+	  of position. It asks for three simple things. First, the neurons must encode position faithfully, for example different
+	  positions cannot be encoded the same, otherwise you'd get confused about where you are. Second, it must obey biological constraints,
+	  which for us mean that neurons have positive firing rates (since a rate of something is positive...) and don't fire too fast.</p>
+
+	  <p>Thirdly, and more unusually, we ask for our representation to embed the structure of 2D space. This structure
+	  is very useful! Lets say you leave your hotel in an unfamiliar city and wander north, then east, then south. Because
+	  you know the structure of 2D space, you know you can get home by going west. And rules are true everywhere! Very handy.</p>
+
+	  <p>We use group and representation theory to work out what a neural representation that embeds this structure in a
+	  particular way must look like. We then find the structure-embedding that achieves our other two objectives best and show,
+	  numerically and with supporting analytics, that this produces neurons that look like multiple modules of grid cells!</p>
+
+	  <p>This was a super satisfying and pretty normative theory; it matches and makes experimental predictions for grid
+		  cell behaviour, and it hints at broader questions of how the brain encodes structure.</p>
+
+	  <p><font size =+1><b>Biological Constraints Lead to Disentangling: A Theory of Functional Cell Types</b></font></p>
+	  <p><i>TLDR: we show constraints biology places on representations lead to separate neurons representing different variables.</p></i>
+	  <img src="./images/research/disentangling.PNG" alt="metalearning" ALIGN="right" class = "padding" width="60%	"/>
+
+	  <p>In neuroscience we record neural firing as animals exist. Our challenge is to understand this pattern: why does a neuron fire
+		  when it does? And role are these neurons playing in functioning behaviour? </p>
+
+	  <p>Classic work answers this question by something in the world that correlates with neural firing. Hubel and
+	  Weisel won and Nobel Prize for finding visual neurons whose firing was highly correlated to the appearance of an edge
+	  in the visual scene. This is great! You can then think of these neurons as edge detectors. How much more interpretable
+		  this is! How many more avenues for discovering function suddenly open, just think about edge detecting rather than
+		  random neural patterns!</p>
+
+	  <p>However, at times, this 60-year-old technique has seemed anachronistic. The brain is a complex device processing complex
+	  inputs and outputs; why should we ever expect individual neurons to code so cleanly for interpretable things in the
+	   world? It just seems naive.</p>
+
+	  <p>In work led by <a href="https://www.jcrwhittington.com/">James Whittington</a> (to which I was just an accessory!) we look at how a population of
+	  neurons could best encode some variables. This population is constrained by biology: it can't fire too fast as this is costly, nor
+	  are the neurons allowed to have negative firing rates (since rates are positive...). We find that under these constraints in very simple linear problems
+	  the solution is for independent variables to be encoded in different populations of neurons. Further, these theoretical results
+	  seem to be true in many more complex empirical settings.</p>
+
+	  <p>This is exciting because it retroactively justifies the old approach! If there are many variables in the world, and
+		  our science is realistic, then different neurons should code for each variable; i.e. we should expect to find
+	  interpretable correlations between variables in the world and neural firing rates! It also particular neural predictions
+	  and relates to machine learning work on disentangled variables.</p>
+
+	<hr style = "clear:both;border-top: 2px solid;">
+		  <p style="font-weight:bold;text-align:center;"><font size="+3">Inductive Bias</font></p>
+			  <p><font size =+1><b>Meta-Learning any Supervised Learner's Inductive Bias</b></font></p>
+			  <p><i>TLDR: designed a tool to learn tasks that a
+			  circuit you're interested in finds easy to learn.</p></i>
+
+			  <img src="./images/research/Meta-Learning.png" alt="metalearning" ALIGN="left" class = "padding" width="30%	"/>
+
+			  <p>Lets say you're learning a new task from examples, e.g. learning the valence of odours: this odour means food, that one means danger. You receive a few examples and memorise them,
+			  but how do you generalise this to odours that aren't quite the same as ones you've already experienced?</p>
+
+			  <p>Having studied the training set, a learner will guess the valence of new odours according to certain trends;
+			  simple things like if an odour is very similar to one you know is food, it is probably also food. The way a learner
+			  generalises in this way is called its inductive bias.</p>
+
+			  <p>These biases are built into the circuit, the way it learns. This allows us to use it as an explanatory window.
+			  Perhaps confusing-biological-feature-blah (e.g. an interesting connectivity pattern) is present because it shapes
+			  the inductive bias of the network in a helpful way?</p>
+
+			  <p>We therefore develop a tool that can meta-learn functions a differentiable supervised learner finds easy to learn.
+			  These characterise the inductive bias of the learner, and allow biological circuit features to be interpreted normatively!</p>
+
+			  <p>Read our paper about it <a href = "https://arxiv.org/pdf/2211.13544.pdf">here</a></p>
+
+
+			  <p><font size =+1><b>Understanding Cerebellar Connectivity Patterns through the Inductive Bias</p></font></b>
+
+			  <p>Following on from the previous project, we are using the inductive bias to give a normative role for recently
+			  measured connectivity patterns in cerebellar-like patterns. This is exciting, because it is mapping from very low
+			  level details (patterns in electron-microscopy measurements of which neuron connect to one another) all the way
+			  to the effect on the function of the network, and the tradeoffs any learning circuit must make!</p>
+
+			  <p>Currently writing up, stay tuned! (And let me know if you have connectivity patterns in supervised learning circuits
+			  that you would like interpreted!)</p>
+
+
+		<hr style = "clear:both;border-top: 2px solid;">
+			  <p style="font-weight:bold;text-align:center;"><font size="+3">Neural Data Analysis</font></p>
+
+
+			  <p><font size =+1><b>Unsupervised Decoding of Mouse Dreams</b></font></p>
+
+			  <p><i>TLDR: adapted a Bayesian spike-sequence detection algorithm to
+			  recover the content of mice's thoughts during sleep.</i></p>
+
+			  <img src="./images/research/PPSeq.jpeg" alt="Behaviour" ALIGN="left" class = "padding" width="30%	"/>
 
 			  <p>Emmett Thompson in the SWC, with the Stephenson-Jones lab, measured the neural activity of mice as they performed a stereotyped action (like
 			  typing your password), and as they slept. We adapted a very nice recent hierarchical Bayesian point-process algorithm, <a href="https://github.com/lindermanlab/PPSeq.jl">PPSeq</a>,
@@ -43,34 +171,40 @@
 			  patterns in the data while the mouse was sleeping. We found evidence that while the mouse is sleeping the same patterns are replaying,
 			  suggesting the mouse might be thinking about the actions it spent all day doing!</p>
 
+
 			  <p>Now the experimental team is looking to see what role this replay plays. It could be functional, like if you practice the piano then go to sleep, you'll
 			  be better when you wake up. This could be because your brain is replaying the patterns it learned during the day. This can all be tested with fancy optogenetic
 			  tools and the like. Expect news soon!</p>
 
-			  <p>The theory side of this was a very fun collaboration with <a href="https://github.com/TomGeorge1234/">Tom George</a>, <a href="https://clementinedomine.github.io/">Clementine Domine</a>, and Rodrigo Carrasco-Davis.</p>
-		  </li>
-	  </ul>
 
-	  <p>Between undergrad and PhD:</p>
-		<ul>
-			<li style = "margin-bottom: 1em"> <a href = "./html/bilateral_olfaction.html">Bilateral Olfaction</a>, TLDR: Analysed olfactory responses to odours in one nostril and used them to build a model of how two hemispheres communicate.
+			  <p>The theory work was a very fun collaboration with <a href="https://github.com/TomGeorge1234/">Tom George</a>, <a href="https://clementinedomine.github.io/">Clementine Domine</a>, and Rodrigo Carrasco-Davis.</p>
+
+
+	  	<hr style = "clear:both;border-top: 2px solid;">
+
+
+			  <p style="font-weight:bold;text-align:center;"><font size="+3">Pre-PhD</font></p>
+			<a href = "./html/bilateral_olfaction.html"><font size =+1><b>Bilateral Olfaction</b></font></a>,
+	  <p><i>TLDR: Analysed olfactory responses to odours in one nostril and used them to build a model of how two hemispheres communicate.</p></i>
 				<p>My first foray into theoretical neuroscience, why do we have two nostrils?! I analysed neural from the olfactory cortex as odours
 			were smelt in the nostril on the same or different side, and asked whether they were different. They weren't very, which was a puzzle given the random scrambling that's supposed to happen in the olfactory system, so we
-			build a model to explain this!</p></li>
-			<li style = "margin-bottom: 1em"> <a href = "./html/okinawa_research.html">Bio-Plausible Hierarchical Reinforcment Learning</a>, TLDR: adapted some hierarchical RL control algorithms to be bio-plausible.
+			build a model to explain this!</p>
+		<a href = "./html/okinawa_research.html"><font size =+1><b>Bio-Plausible Hierarchical Reinforcment Learning</b></font></a>
+	  <p><i>TLDR: adapted some hierarchical RL control algorithms to be bio-plausible.</p></i>
 
 				<p>My project in Okinawa with Sergio Veduzco-Flores, we adapted hierarchical reinforcement learning algorithms
 			to work biologically-plausibly! These are two algorithms controlling an arm type thing: the top one (the manager) says 'get the arm here' and the bottom one (worker) says 'okay boss, moving muscles to get arm here'. The manager
-			learns to choose good instructions so the complete agents succeeds, the worker learns to do what the manager says!</p></li>
-			<li style = "margin: 1em"><p><a href = "./html/metamaterials.html">Acoustic Metamaterials</a>, TLDR: made an acoustic metamaterial mimic of bilayer graphene.
+			learns to choose good instructions so the complete agents succeeds, the worker learns to do what the manager says!</p>
+		<a href = "./html/metamaterials.html"><font size =+1><b>Acoustic Metamaterials</b></font></a></p>
+			<p><i>TLDR: made an acoustic metamaterial mimic of bilayer graphene.</p></i>
 				<p>I used to be a condensed matter physicist, interested in understanding the weird ways large collections of atoms start behaving.
 				Often these are funky quantum systems, colder than outer space, carefully isolated from the outside world. But! Surprisingly, many of these interesting phenomena have analogues in much simpler systems. The
 				equations which govern electrons have similarities to those that govern simple waves (e.g. sound), so you can make analogues of weird electronic effects using sound waves. This is (A) cool, (B) allows you to study
 				the same phenomena but at room temperature with nothing more complex than a lattice of iron pillars, a speaker, and a microphone, (C) allows technological transfer, either making better acoustic devices thanks to
 				the last century of condensed matter physics, or using acoustics to rapidly prototype the very fiddly little quantum devices in simple acoustics first, then try them in quantum world!</p>
 
-			I developed just such an acoustic mimic of a current system of much interest, van der Waals materials, and their superstar family member (superstar because it superconducts, which is a holy grail of condensed matter physics), magic angle twisted bilayer graphene.</li>
-		</ul>
+			I developed just such an acoustic mimic of a current system of much interest, van der Waals materials, and their superstar family member (superstar because it superconducts, which is a holy grail of condensed matter physics), magic angle twisted bilayer graphene.
+
   </div>
 </body>
 </html>
