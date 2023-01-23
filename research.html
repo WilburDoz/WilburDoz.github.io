@@ -23,7 +23,7 @@
 	    <h4 style = "margin-top: 1.75em;margin-bottom:0em"> <a href = "index2.html" style = "text-decoration: none;">Not-so-serious Things </a></h4>
 	</div>
   <hr style = "clear:both;border-top: 2px solid;">
-  <div id = "Text" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
+  <div id = "Structure" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
 	  <p style="font-weight:bold;text-align:center;"><font size="+3">My Current Research (Jan 2023)</font></p>
 	  <p>The major thrust of my thinking at the moment concerns how animals learn and exploit structure in the world.</p>
 	  <p>The world has manifold repeating patterns; from the mundane (things tend to fall unless supported), to the obscure
@@ -41,6 +41,8 @@
 	  and beautiful neural representation you could ask for (see <a href="https://twitter.com/GabyMohamady/status/1578351583544213506">here</a>).
 	  I am now super interested in thinking about the algorithms at work in discovering the appropriate structural elements,
 	  and piecing them together, and using this to try and match the observations all the way down to neural firing rate predictions.</p>
+	</div>
+	  <div id = "Structure" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
 	  <p><font size =+1><b>All Scientific Projects</b></font></p>
 	  <p>I'm interested in basically anything with structure (hehe), and have done work in condensed matter physics, a
 	  few areas of theory for neuroscience, and machine learning. Here's the full run-down with extended descriptions of most below.</p>
@@ -56,6 +58,8 @@
 		  <li style = "margin-bottom: 0em">Modelling the bilateral interaction of olfactory information. Paper <a href="https://www.biorxiv.org/content/10.1101/2020.02.24.960922v2.abstract">here</a></li>
 		  <li style = "margin-bottom: 0em">Creating an acoustic meta-material mimic of van der Waals materials. Papers <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.121103">here</a> and <a href ="https://iopscience.iop.org/article/10.1088/2053-1583/abf252/meta">here.</a></li>
 	  </ul>
+		  </div>
+	  <div id = "Representations" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
 	<hr style = "clear:both;border-top: 2px solid;">
 	  <p style="font-weight:bold;text-align:center;"><font size="+3">Neural Representation Theory</font></p>
 	  <p><font size =+1><b>Actionable Neural Representations: A Normative Theory of Grid Cells</b></font></p>
@@ -88,7 +92,7 @@
 	  numerically and with supporting analytics, that this produces neurons that look like multiple modules of grid cells!</p>
 
 	  <p>This was a super satisfying and pretty normative theory; it matches and makes experimental predictions for grid
-		  cell behaviour, and it hints at broader questions of how the brain encodes structure.</p>
+		  cell behaviour, and it hints at broader questions of how the brain encodes structure. Paper <a href="https://arxiv.org/abs/2209.15563">here</a></p>
 
 	  <p><font size =+1><b>Biological Constraints Lead to Disentangling: A Theory of Functional Cell Types</b></font></p>
 	  <p><i>TLDR: we show constraints biology places on representations lead to separate neurons representing different variables.</p></i>
@@ -116,8 +120,9 @@
 	  <p>This is exciting because it retroactively justifies the old approach! If there are many variables in the world, and
 		  our science is realistic, then different neurons should code for each variable; i.e. we should expect to find
 	  interpretable correlations between variables in the world and neural firing rates! It also particular neural predictions
-	  and relates to machine learning work on disentangled variables.</p>
-
+	  and relates to machine learning work on disentangled variables. Paper <a href="https://arxiv.org/abs/2210.01768">here</a></p>
+		  </div>
+	  <div id = "Inductive" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
 	<hr style = "clear:both;border-top: 2px solid;">
 		  <p style="font-weight:bold;text-align:center;"><font size="+3">Inductive Bias</font></p>
 			  <p><font size =+1><b>Meta-Learning any Supervised Learner's Inductive Bias</b></font></p>
@@ -182,19 +187,28 @@
 
 	  	<hr style = "clear:both;border-top: 2px solid;">
 
-
+</div>
+	  <div id = "Pre-PhD" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
 			  <p style="font-weight:bold;text-align:center;"><font size="+3">Pre-PhD</font></p>
+		  <div id = "bilateral_olfaction">
 			<a href = "./html/bilateral_olfaction.html"><font size =+1><b>Bilateral Olfaction</b></font></a>,
 	  <p><i>TLDR: Analysed olfactory responses to odours in one nostril and used them to build a model of how two hemispheres communicate.</p></i>
 				<p>My first foray into theoretical neuroscience, why do we have two nostrils?! I analysed neural from the olfactory cortex as odours
 			were smelt in the nostril on the same or different side, and asked whether they were different. They weren't very, which was a puzzle given the random scrambling that's supposed to happen in the olfactory system, so we
-			build a model to explain this!</p>
+			build a model to explain this! Paper <a href="https://www.biorxiv.org/content/10.1101/2020.02.24.960922v2.abstract">here</a>, or more description <a href = "./html/bilateral_olfaction.html">here</a>.</p>
+
+			  </div>
+		  		  <div id = "okinawa_research">
+
 		<a href = "./html/okinawa_research.html"><font size =+1><b>Bio-Plausible Hierarchical Reinforcment Learning</b></font></a>
 	  <p><i>TLDR: adapted some hierarchical RL control algorithms to be bio-plausible.</p></i>
 
 				<p>My project in Okinawa with Sergio Veduzco-Flores, we adapted hierarchical reinforcement learning algorithms
 			to work biologically-plausibly! These are two algorithms controlling an arm type thing: the top one (the manager) says 'get the arm here' and the bottom one (worker) says 'okay boss, moving muscles to get arm here'. The manager
-			learns to choose good instructions so the complete agents succeeds, the worker learns to do what the manager says!</p>
+			learns to choose good instructions so the complete agents succeeds, the worker learns to do what the manager says! Paper <a href="https://www.sciencedirect.com/science/article/pii/S0893608022000727">here</a>, or more description <a href = "./html/okinawa_research.html">here</a>.</p>
+		  </div>
+		  		  <div id = "meta_materials">
+
 		<a href = "./html/metamaterials.html"><font size =+1><b>Acoustic Metamaterials</b></font></a></p>
 			<p><i>TLDR: made an acoustic metamaterial mimic of bilayer graphene.</p></i>
 				<p>I used to be a condensed matter physicist, interested in understanding the weird ways large collections of atoms start behaving.
@@ -203,8 +217,10 @@
 				the same phenomena but at room temperature with nothing more complex than a lattice of iron pillars, a speaker, and a microphone, (C) allows technological transfer, either making better acoustic devices thanks to
 				the last century of condensed matter physics, or using acoustics to rapidly prototype the very fiddly little quantum devices in simple acoustics first, then try them in quantum world!</p>
 
-			I developed just such an acoustic mimic of a current system of much interest, van der Waals materials, and their superstar family member (superstar because it superconducts, which is a holy grail of condensed matter physics), magic angle twisted bilayer graphene.
+			<p>I developed just such an acoustic mimic of a current system of much interest, van der Waals materials, and their superstar family member (superstar because it superconducts, which is a holy grail of condensed matter physics), magic angle twisted bilayer graphene.</p>
 
+					 <p> Papers <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.121103">here</a> and <a href ="https://iopscience.iop.org/article/10.1088/2053-1583/abf252/meta">here</a>, or more <a href="./html/metamaterials.html">here</a></p>
+</div>
   </div>
 </body>
 </html>
