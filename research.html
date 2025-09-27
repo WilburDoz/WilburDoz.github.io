@@ -26,34 +26,63 @@
   <div id = "Structure" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
 	<p style="font-weight:bold;text-align:center;"><font size="+3">The Efficient Computing Hypothesis</font></p>
 
-	  <p> I've helped out on projects a few different areas of neuroscience, machine learning, and phyiscs, but the area
+	  <p> I've helped in a few different areas of neuroscience, machine learning, and phyiscs. But the area
 		  of work I'm most passionate about (addicted to, obsessed with, consumed by) is normative theories of brain
 		  function. The Efficient Computing Hypothesis was the (grand & wanky) title of my PhD thesis, which was all
-		  about building mathematical theories that predict the behaviour of neurons in your cortex as they perform
+		  about building mathematical theories that predict the behaviour of neurons as they perform
 		  different algorithms. </p>
 
 	  <p> That's a lot of words, I gave a talk for non-specialists on it at my PhD defence (attack!) which you can watch
-		  here (my talk is the second half, only 30mins (15 on double speed!) - the first half is my friend Tom giving
+		  here (my talk is the second half, it's only 30mins (or 15 on double speed!) - and the first half is my friend Tom giving
 		  a really cute talk about his scientific trajectory), and the introduction of <a href = "pdfs/PhD_Thesis.pdf">my thesis</a>
 		  gives a brief introduction to the ideas. </p>
 
-	  <p> There's a famous quote, 'Nothing in Biology makes sense except in the light of evolution'. Why do elephants
-		  have trunks? Evolution. Why do trees have leaves? Evolution. You get the idea, things are there because they
-		  are adaptively selected. This is profound, but maybe not very useful for a neuroscientist on the ground
-		  trying to understand how a brain works. Why is that neuron doing this and not that? Evolution... alright
-	  but what can I do with that?</p>
+	  <p> In very brief, the idea is the following. Your brain is composed of bits that seem to do very prescribed
+	  computations, little algorithms running in parallel and talking to one another. We then look at the neurons in
+	  those bits and get all confused, 'why is that neuron behaving like that?' My thesis tries to answer these 'why' questions.
+		  The theories are based on the following assumption: if we really knew (1) what computation/algorithm a brain area/circuit
+		  is performing, and we knew (2) how brains tend to implement things, we should be able to predict neural activity
+		  from the supposed algorithm. I build maths that makes exactly this link, you frame an algorithm, and the theory
+	  makes assumptions and performs optimisations to try to predict how the neurons should implement this.</p>
 
-	  <p> What evolution does provide is some sense of a goal - things in biology exist for a reason, they are 'designed'.
-		  What we need then is some ideas that links the goal of the system to the measurements we make - e.g. this neuron
-		  behaves like that to achieve this function. That is what normative theories try to do. The norm in 'normative
-		  theory' is the same as a moral norm, a prescription of what <i>should</i> be the case. We specify what we mean
-		  by good, just like evolution does, and then we try and predict how neurons should behave to be good.</p>
+	  <p>This sounds mad, but turns out it can work, predicting neural activity, sometimes with exquisite precision.
+		  People have played with theories like this for 75 years, to some success.
+		  But the existing theories are either beautiful but insufficiently rich (the Efficient Coding Hypothesis)
+		  or flexible but insufficiently simple (Connectionism: modeling neural activity with neural networks, which is progress,
+	  but just as confusing as the brain was a lot of the time), leaving us confused. My thesis
+	  developed a version, the Efficient Computing Hypothesis, that pairs the understandability/tractability/beauty of
+	  the Efficient Coding Hypothesis with the computing abilities of Connectionism. We then used it to understand a few
+	  representations from around cortex.</p>
 
-	  <p> This is classic work going back 75 years to the earliest days of neural measurements. They framed a theory
-	  called the Efficient Coding Hypothesis. I love this theory, but think it is often rubbish at explaining cortical
-		  responses, so we tried to develop a better theory, hence, the Efficient Computing Hypothesis.
-	  </p>
+	  <p> It remains a source of continual wonder to me that I can scratch arcane maths symbols on a page and have a
+	  reasonable hope of predicting what the brain will do. In my next round of research I aim to extend, develop,
+	  elaborate and generally better-ify these theories, making them as useful as possible for people studying how brains
+	  and artificial neural networks implement computations.</p>
 
+	  Major projects I really worked on in my PhD:
+	  <ul>
+		  <li style = "margin-bottom: 0em"><a href = "pdfs/PhD_Thesis.pdf">Part I</a>: A normative theory of path-integrable representations broadly, and grid cells
+		  in particular (Paper <a href="https://arxiv.org/abs/2209.15563">here</a>), and a review of the normative grid cell literature</li>
+		  <li style = "margin-bottom: 0em"><a href = "pdfs/PhD_Thesis.pdf">Part II</a>: Normative theory for the emergence of modular or mixed selective neurons.
+			  I helped with <a href="https://arxiv.org/abs/2210.01768">this first paper</a>, then led
+				  <a href = "https://arxiv.org/abs/2410.06232">this subsequent development</a>.</li>
+		  <li style = "margin-bottom: 0em"><a href = "pdfs/PhD_Thesis.pdf">Part III</a>: A normative theory of prefrontal cortical schematic working memory representations.
+			  Following some <a href ='https://www.nature.com/articles/s41586-024-08145-x'>impressive experiments</a> and
+			  <a href ="https://www.sciencedirect.com/science/article/pii/S0896627324007657">NN modelling work</a> I kind of helped with.
+		  <li style = "margin-bottom: 0em"><a href = "pdfs/PhD_Thesis.pdf">Part IV</a>: I'm not currently developing this, but I worked on normative theories and tools for
+		  understanding connectomic structure in cerebellar-like networks, one paper is <a href ="https://proceedings.mlr.press/v202/dorrell23a.html">here</a>.</li>
+	  </ul>
+
+	  Along with some projects and collaborations I did before my PhD or on the side of the main stuff, none of which I'm actively working on:
+	  <ul>
+		  <li style = "margin-bottom: 0em">Development of a novel method for disentangled representation learning, paper <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/8e63972d4d9d81b31459d787466ce271-Abstract-Conference.html">here</a></li>
+		  <li style = "margin-bottom: 0em">Unsupervised discovery of action replay in sleeping mice, paper <a href="https://www.biorxiv.org/content/10.1101/2024.06.05.597547v1.abstract">here</a></li>
+		  <li style = "margin-bottom: 0em">Building a bio-plausible hierarchical reinforcement learning agent. Paper <a href="https://www.sciencedirect.com/science/article/pii/S0893608022000727">here</a></li>
+		  <li style = "margin-bottom: 0em">Modelling the bilateral interaction of olfactory information. Paper <a href="https://www.biorxiv.org/content/10.1101/2020.02.24.960922v2.abstract">here</a></li>
+		  <li style = "margin-bottom: 0em">Creating an acoustic meta-material mimic of van der Waals materials. Papers <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.121103">here</a> and <a href ="https://iopscience.iop.org/article/10.1088/2053-1583/abf252/meta">here.</a></li>
+	  </ul>
+
+	  <!--
 	  <p style="font-weight:bold;text-align:center;"><font size="+3">My Current Research (Jan 2023)</font></p>
 	  <p>The major thrust of my thinking at the moment concerns how animals learn and exploit structure in the world.</p>
 	  <p>The world has manifold repeating patterns; from the mundane (things tend to fall unless supported), to the obscure
@@ -73,8 +102,9 @@
 	  and piecing them together, and using this to try and match the observations all the way down to neural firing rate predictions.</p>
 	</div>
 	  <div id = "Structure" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
+
 	  <p><font size =+1><b>All Scientific Projects</b></font></p>
-	  <p>I'm interested in basically anything with structure (hehe), and have done work in condensed matter physics, a
+	  <p>While I'm basically interested in anything with structure, I somand have done work in condensed matter physics, a
 	  few areas of theory for neuroscience, and machine learning. Here's the full run-down with extended descriptions of most below.</p>
 	  <ul>
 		  <li style = "margin-bottom: 0em">Discovery and use of structure by neural systems.</li>
@@ -251,6 +281,7 @@
 
 					 <p> Papers <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.121103">here</a> and <a href ="https://iopscience.iop.org/article/10.1088/2053-1583/abf252/meta">here</a>, or more <a href="./html/metamaterials.html">here</a></p>
 </div>
+--!>
   </div>
 </body>
 </html>
