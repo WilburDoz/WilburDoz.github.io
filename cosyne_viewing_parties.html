@@ -8,6 +8,22 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+  .iframe-container {
+    position: relative; /* Essential for positioning the iframe inside */
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+    /* Use 75% for 4:3 aspect ratio (3/4) or 100% for a 1:1 square. */
+  }
+
+  .iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
   </style>
 </head>
 <div>
@@ -22,30 +38,30 @@
   <p><b>Attend:</b> Click the relevant pin on the map below for information on how to attend each viewing party.</p>
     <p><b>Current Locations:</b> New York, Boston.</p>
 
+  <div class="iframe-container">
     <iframe
-  width="1000"
-  height="450"
-  style="border:0"
+style="border:0"
   loading="lazy"
   allowfullscreen
   referrerpolicy="no-referrer-when-downgrade"
   src="https://www.google.com/maps/d/u/0/embed?mid=1yhW2ZZeQmZUePuTDFCfGszwovWT6eW8&ehbc=2E312F&z=2">
 </iframe>
+    </div>
 
-  <p><b>In Brief:</b> Cosyne is great, but people can't attend in person for climate, visa, financial, or personal reasons. Cosyne
-  talks are streamed on youtube, but watching days of talks on your laptop is as agonising way to an aneurism. Cosyne
-  Viewing Parties aim to offer a third way: gathering regionally with others to provide partial conference benefits at
-  partial costs. This page provides motivation, and information on how to attend a Viewing Party or host your own.</p>
 
-  <p><b>Some Motivation:</b> Flying round the world to attend a conference is not always possible. Cost,
-  visa restrictions, and personal responsibilities can make such a trip impossible. Further, flights contribute
+  <p><b>In Brief:</b> Cosyne is the preeminent computational neurscience conference, but a variety of factors limit in-person attendance. Cosyne
+  talks are streamed on youtube, but watching days of talks on your laptop is as agonising way to an aneurism. This year, Cosyne is supporting
+  Viewing Parties, which offer a third way: regional gatherings that provide partial conference benefits at
+  partial costs. This page provides motivation, and information on how to attend a Cosyne Viewing Party or host your own.</p>
+
+  <p><b>Some Motivation:</b> Costs, visa restrictions, and personal responsibilities can make flying round the world to attend a conference impossible. Further, flights contribute
    around <a href = https://ourworldindata.org/global-aviation-emissions>2.5% of yearly CO<sub>2</sub> emissions</a>,
   but, unlike most other major sources of emissions, there is no feasible green drop-in replacement for flying. This
   makes reducing flying a key part of almost all realistic net-zero plans.</p>
 
   <p><b>The Idea:</b> Viewing Parties will run alongside the main conference in Lisbon. They will allow people to gather,
   capturing some of the advantages of an in-person conference, while making logistics easier and greener. The details are
-  flexible: at it's simplest, it might just involve hiring a room and screening the talks for an audience who can then discuss
+  flexible: at it's simplest, it can involve hiring a room and screening the talks for an audience who can then discuss
   what they see. More elaborate versions might draw people from across a large area (e.g. all of South Africa, or the Eastern US)
   and host poster sessions, social events, or additional discussions alongside talk screenings. This has already worked
   for <a href = "https://ellisunconference2023.github.io/">ICML</a>, <a href = https://2025.ccneuro.org/local-meetups/>CCN</a>,
@@ -57,11 +73,11 @@
   <p><b>Host:</b> Hosting can be easy! Simply book a room at your local institution and screen the talks. Additional efforts
   that might improve the expierence include coffee/food, a poster session, organised social events, or additional panel discussions.
   To register with us and appear on our map (allowing people to find you) email `dorrellwec at gmail.com' with the following
-  information about the Viewing Party you are planning:</p>
+  information:</p>
   	<ul>
-		<li style = "margin-bottom: 0em">Where will it be hosted?</li>
+		<li style = "margin-bottom: 0em">Where will the Cosyne Viewing Party be hosted?</li>
 		<li style = "margin-bottom: 0.25em">How can people attend?</li>
-		<li style = "margin-bottom: 0em">Contact details (who are you?).</li>
+		<li style = "margin-bottom: 0em">Contact details - who are you?</li>
 		<li style = "margin-bottom: 0em">(Optional) Information on the additional events, link to a corresponding webpage, or an invitation to
         bring posters/talks etc.</li>
 	</ul>
