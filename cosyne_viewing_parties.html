@@ -24,11 +24,60 @@
   height: 100%;
   border: none;
 }
+  .image-row {
+      display: flex;
+      gap: 10px; /* space between images */
+      justify-content: center; /* centers horizontally */
+    }
+  
+  .image-item {
+    text-align: center; /* centers caption under image */
+  }
+
+  .image-row img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .caption {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+
   </style>
 </head>
 <div>
-	<p style="font-weight:bold;text-align:center;"><font size="+3">Viewing Parties for Cosyne 2026</font></p>
-	<hr style = "clear:both;border-top: 2px solid;">
+  <p style="font-weight:bold;text-align:center;"><font size="+3">Cosyne 2026 Viewing Parties</font></p>
+  <hr style = "clear:both;border-top: 2px solid;">
+</div>
+<div>
+    <p style="font-weight:bold;text-align:center;"><font size="+3">Thanks for Taking Part - Until 2027!</font></p>
+
+    <p style="text-align: center;">We had 11 groups sign up from 5 continents, broadening access, while reducing climate impact! Hooray! Hoping to be bigger and better next year :)</p>
+
+
+  <div class="image-row", style="align: center;">
+    <div class="image-item">
+      <img src="images/Cosyne_Viewing_2026/Friday_Boston.jpg" alt="Boston Friday">
+      <div class="caption">(Some of the) Boston Crew on Friday</div>  
+    </div>
+    <div class="image-item">
+      <img src="images/Cosyne_Viewing_2026/Para.png" alt="Para">
+      <div class="caption">Group gathered in Belém</div>  
+    </div>
+    <div class="image-item">
+        <img src="images/Cosyne_Viewing_2026/Montreal.jpeg" alt="Montreal">
+        <div class="caption">Montreal Watch Party</div>  
+    </div>
+      <div class="image-item">   
+      <img src="images/Cosyne_Viewing_2026/Sunday_Boston.jpg" alt="Boston Sunday">
+      <div class="caption">Boston crew on the Sunday</div>  
+    </div>    
+  </div>
+
+    <hr style = "clear:both;border-top: 2px solid;">
 </div>
 <body style="background-color:darkseagreen;">
 <div id = "Text" style = "width:75%;margin:0 auto;text-align:left;font-family:Arial;padding-left = 20%">
